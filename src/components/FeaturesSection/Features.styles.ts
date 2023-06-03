@@ -5,6 +5,7 @@ export const useFeaturesStyles = createStyles((theme) => ({
     position: "relative",
     paddingTop: `calc(${theme.spacing.xl} * 3)`,
     paddingBottom: `calc(${theme.spacing.xl} * 3)`,
+    background: "linear-gradient(0deg, rgb(2,22,36,1) 0%, rgba(0,0,0,1) 69%)",
   },
 
   inner: {
@@ -48,7 +49,7 @@ export const useFeaturesStyles = createStyles((theme) => ({
   },
 
   card: {
-    backgroundColor: "rgba(0, 0, 0, 0.2)",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
     border: `${rem(1)} solid ${theme.colors.dark[5]}`,
   },
 

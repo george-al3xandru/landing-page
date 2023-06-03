@@ -6,7 +6,7 @@ export const useHeroBannerStyles = createStyles((theme) => ({
     paddingTop: `calc(${theme.spacing.xl} * 3)`,
     paddingBottom: `calc(${theme.spacing.xl} * 3)`,
     overflow: "hidden",
-    background: "#000000"
+    background: "#00000"
   },
 
   inner: {
@@ -47,7 +47,6 @@ export const useHeroBannerStyles = createStyles((theme) => ({
 
   title: {
     color: theme.white,
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     fontWeight: 900,
     lineHeight: 1.05,
     maxWidth: rem(500),
@@ -86,7 +85,6 @@ export const useHeroBannerStyles = createStyles((theme) => ({
   control: {
     paddingLeft: rem(50),
     paddingRight: rem(50),
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     fontSize: rem(22),
 
     [theme.fn.smallerThan("sm")]: {

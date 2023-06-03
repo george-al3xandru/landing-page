@@ -1,0 +1,62 @@
+.clipboard {
+    width: 12px;
+    height: 12px;
+    transform: scale(2);
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .clipboard svg {
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+  }
+  
+  .clipboard svg path {
+    stroke-width: 1.5;
+    stroke: rgb(0, 0, 0);
+    fill: rgb(255, 255, 255);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  .clipboard svg path.page {
+    transform-origin: center;
+  }
+  
+  .clipboard svg path.check {
+    transform-origin: center;
+    stroke-dasharray: 8;
+    stroke-dashoffset: 8;
+    stroke: #1bac46;
+  }
+  
+  .clipboard:hover svg {
+    opacity: 1;
+  }
+  
+  .clipboard.copied svg path.page {
+    animation: copiedPage 2s ease forwards;
+  }
+  
+  .clipboard.copied svg path.check {
+    stroke-dasharray: 16;
+    transition: all 0.5s ease;
+    animation: copiedPage 2s ease forwards;
+  }
+  
+  @keyframes copiedPage {
+    0% {
+      transform: rotate(0) translateY(0);
+      opacity: 1;
+    }
+  
+    50% {
+      transform: rotate(0) translateY(0);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: rotate(10deg) translateY(16px);
+      opacity: 0;
+    }
+  }

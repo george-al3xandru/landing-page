@@ -1,6 +1,8 @@
 import React from "react";
-import HeroSection from "../components/LandingPage/HeroBanner/HeroSection";
-import Features from "../components/LandingPage/FeaturesSection/Features";
+import HeroSection from "../components/HeroBanner/HeroSection";
+import Features from "../components/FeaturesSection/Features";
+import ContactForm from "../components/Contact/ContactForm";
+import ClipboardButton from "../components/Common/ClipboardButton";
 
 type Props = {};
 
@@ -9,6 +11,7 @@ const LandingPage = (props: Props) => {
     <>
       <HeroSection />
       <Features />
+      <ContactForm />
     </>
   );
 };
