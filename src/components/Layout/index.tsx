@@ -40,7 +40,6 @@ const Layout = () => {
         padding: "70px 0 0 0",
       },
     },
-    navbarOffsetBreakpoint: "sm",
     header: <HeaderComponent links={links} />,
     footer: <FooterComponent data={data} />,
   };
