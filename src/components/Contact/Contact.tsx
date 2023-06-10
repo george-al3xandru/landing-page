@@ -1,4 +1,4 @@
-import { Container } from "@mantine/core";
+import { Flex } from "@mantine/core";
 import ContactForm from "./ContactForm";
 import ContactInformation from "./ContactInformation";
 import { useContactStyles } from "./Contact.styles";
@@ -7,13 +7,19 @@ const Contact = () => {
   const { classes } = useContactStyles();
 
   return (
-    <div style={{ background: "rgb(2,22,36)" }}>
-      <Container fluid maw={800}>
+    <div className={classes.root}>
+      <div className={classes.inner}>
         <div className={classes.wrapper}>
           <ContactInformation />
           <ContactForm />
         </div>
-      </Container>
+      </div>
+
+      <img
+        src="/images/contact-section.png"
+        alt="contact"
+        className={classes.image}
+      />
     </div>
   );
 };

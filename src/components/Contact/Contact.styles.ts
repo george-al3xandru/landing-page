@@ -4,6 +4,54 @@ export const useContactStyles = createStyles((theme) => {
   const BREAKPOINT = theme.fn.smallerThan("sm");
 
   return {
+    root: {
+      position: "relative",
+      paddingTop: `calc(${theme.spacing.xl} * 3)`,
+      paddingBottom: `calc(${theme.spacing.xl} * 3)`,
+      overflow: "hidden",
+      background: "rgb(2,22,36)",
+    },
+
+    inner: {
+      marginRight: "15%",
+      display: "flex",
+      justifyContent: "flex-end",
+      [theme.fn.smallerThan("xl")]: {
+        marginRight: "10%",
+      },
+
+      [theme.fn.smallerThan("lg")]: {
+        marginRight: "5%",
+      },
+
+      [theme.fn.smallerThan(1270)]: {
+        justifyContent: "center",
+        marginRight: "0%",
+      },
+    },
+
+    image: {
+      position: "absolute",
+      maxWidth: "300px",
+      objectFit: "cover",
+      bottom: 144,
+      marginLeft: "10%",
+
+      [theme.fn.smallerThan(1620)]: {
+        marginLeft: "0%",
+        left: 70,
+      },
+
+      [theme.fn.smallerThan(1350)]: {
+        left: 30,
+      },
+
+      [theme.fn.smallerThan(1270)]: {
+        left: 0,
+        transform: "translateX(-50%)"
+      },
+    },
+
     wrapper: {
       padding: "72px 0",
       display: "flex",
